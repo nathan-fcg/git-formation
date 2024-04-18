@@ -15,6 +15,7 @@ function parseNumbers(filename) {
   }
 }
 
+<<<<<<< HEAD
 function computeSum(nums) {
   return nums.reduce((acc, curr) => acc + curr, 0);
 }
@@ -28,6 +29,21 @@ function main() {
   const nums = parseNumbers("numbers.txt");
   const total = computeSum(nums);
   const average = computeAverage(nums);
+=======
+function getSum(numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+
+function calculateAverage(numbers) {
+  if (numbers.length === 0) return 0;
+  return getSum(numbers) / numbers.length;
+}
+
+function main() {
+  const numbers = readNumbers("numbers.txt");
+  const total = getSum(numbers);
+  const average = calculateAverage(numbers);
+>>>>>>> 104cfbe (rename sum function)
 
   console.log(`Sum: ${total}`);
   console.log(`Average: ${average}`);
