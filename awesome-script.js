@@ -31,6 +31,7 @@ function main() {
 
   console.log(`Sum: ${total}`);
   console.log(`Average: ${average}`);
+  console.log("El Mordjene");
 }
 
 main();
